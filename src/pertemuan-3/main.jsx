@@ -12,7 +12,7 @@ createRoot(document.getElementById("root"))
        <FlexboxGrid/>
       <TailwindCSS />
       <Typography/>
-      <UserForm/> t add
+      <UserForm/> 
       <HitungGajiForm/>
     </div>
   );
