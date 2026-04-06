@@ -2,18 +2,33 @@ import { useState } from "react";
 import frameworkData from "./framework.json";
 
 export default function FrameworkListSearchFilter() {
-    const [searchTerm, setSearchTerm] = useState("");
-    const [selectedTag, setSelectedTag] = useState("");
+    const [dataForm, setDataForm] = useState({
+        searchTerm: "",
+        selectedTag: "",
+    });
 
+    // Handle perubahan nilai input form
+    const handleChange = (evt) => {
+        const { name, value } = evt.target;
+        setDataForm({
+            ...dataForm,
+            [name]: value,
+        });
+    };
+
+    // Ambil semua tag unik dari data
     const allTags = [...new Set(frameworkData.flatMap(item => item.tags))];
 
+    // Filter data berdasarkan searchTerm dan selectedTag
+    const _searchTerm = dataForm.searchTerm.toLowerCase();
+    const selectedTag = dataForm.selectedTag;
 
-    const _searchTerm = searchTerm.toLowerCase();
     const filteredFrameworks = frameworkData.filter((framework) => {
         const matchesSearch =
             framework.name.toLowerCase().includes(_searchTerm) ||
-            framework.description.toLowerCase().includes(_searchTerm);
+            framework.description.toLowerCase().includes(_searchTerm) ||
             framework.details.developer.toLowerCase().includes(_searchTerm);
+
         const matchesTag = selectedTag ? framework.tags.includes(selectedTag) : true;
 
         return matchesSearch && matchesTag;
@@ -30,14 +45,16 @@ export default function FrameworkListSearchFilter() {
                 <input
                     type="text"
                     placeholder="Search framework..."
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
+                    name="searchTerm"
+                    value={dataForm.searchTerm}
+                    onChange={handleChange}
                     className="w-full p-2 border border-gray-300 rounded"
                 />
 
                 <select
-                    value={selectedTag}
-                    onChange={(e) => setSelectedTag(e.target.value)}
+                    name="selectedTag"
+                    value={dataForm.selectedTag}
+                    onChange={handleChange}
                     className="w-full md:w-60 p-2 border border-gray-300 rounded"
                 >
                     <option value="">All Tags</option>
@@ -49,12 +66,12 @@ export default function FrameworkListSearchFilter() {
                 </select>
             </div>
 
-        
+            {/* List Framework */}
             {filteredFrameworks.length === 0 ? (
                 <p className="text-center text-gray-500 text-lg">No frameworks found.</p>
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {filteredFrameworks.map((item, index) => (
+                    {filteredFrameworks.map((item) => (
                         <div
                             key={item.id}
                             className="group flex flex-col justify-between border border-gray-100 p-6 rounded-2xl shadow-sm bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
