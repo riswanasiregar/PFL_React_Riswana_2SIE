@@ -5,7 +5,7 @@ import ResponsiveText from "./ResponsiveDesign";
 
 createRoot(document.getElementById("root")).render(
   <div>
-    {/* <FrameworkList /> */}
+     <FrameworkList /> 
     <ResponsiveText />
   </div>
 );

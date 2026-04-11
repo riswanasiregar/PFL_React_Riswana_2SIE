@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "name": "Telemedicine Umum SehatQ",
+    "category": "Telemedicine",
+    "rating": 4.8,
+    "price": 50000,
+    "image": "https://plus.unsplash.com/premium_photo-1672097247893-4f8660247b1f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cnVtYWglMjBzYWtpdHxlbnwwfHwwfHx8MA%3D%3D",
+    "provider": {"name": "SehatQ","since": 2017,"license": "Kemenkes"},
+    "contact": {"phone": "081234567801","email": "info1@sehat.id","city": "Pekanbaru"},
+    "schedule": {"open": "08:00","close": "21:00","days": "Senin-Minggu"}
+  },
+  {
+    "id": 2,
+    "name": "Halodoc Konsultasi Dokter",
+    "category": "Telemedicine",
+    "rating": 4.9,
+    "price": 60000,
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d",
+    "provider": {"name": "Halodoc","since": 2016,"license": "Kemenkes"},
+    "contact": {"phone": "081234567802","email": "info2@sehat.id","city": "Dumai"},
+    "schedule": {"open": "08:00","close": "22:00","days": "Senin-Minggu"}
+  },
+  {
+    "id": 3,
+    "name": "Klinik Mitra Sehat",
+    "category": "Klinik",
+    "rating": 4.7,
+    "price": 45000,
+    "image": "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvc3BpdGFsfGVufDB8fDB8fHww",
+    "provider": {"name": "Mitra Sehat","since": 2015,"license": "Kemenkes"},
+    "contact": {"phone": "081234567803","email": "info3@sehat.id","city": "Bangkinang"},
+    "schedule": {"open": "07:30","close": "20:00","days": "Senin-Sabtu"}
+  },
+  {
+    "id": 4,
+    "name": "Apotek Sejahtera",
+    "category": "Apotek",
+    "rating": 4.6,
+    "price": 20000,
+    "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+    "provider": {"name": "Sejahtera Farma","since": 2012,"license": "BPOM"},
+    "contact": {"phone": "081234567804","email": "info4@sehat.id","city": "Pekanbaru"},
+    "schedule": {"open": "08:00","close": "23:00","days": "Senin-Minggu"}
+  },
+  {
+    "id": 5,
+    "name": "Laboratorium Prodia Mini",
+    "category": "Laboratorium",
+    "rating": 4.8,
+    "price": 120000,
+    "image": "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b",
+    "provider": {"name": "Prodia","since": 2005,"license": "Kemenkes"},
+    "contact": {"phone": "081234567805","email": "info5@sehat.id","city": "Dumai"},
+    "schedule": {"open": "07:00","close": "18:00","days": "Senin-Jumat"}
+  },
+  {
+    "id": 6,
+    "name": "Telemedicine Anak",
+    "category": "Telemedicine",
+    "rating": 4.5,
+    "price": 55000,
+    "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95",
+    "provider": {"name": "KlikDokter","since": 2018,"license": "Kemenkes"},
+    "contact": {"phone": "081234567806","email": "info6@sehat.id","city": "Bangkinang"},
+    "schedule": {"open": "09:00","close": "20:00","days": "Senin-Minggu"}
+  },
+  {
+    "id": 7,
+    "name": "Klinik Gigi Ceria",
+    "category": "Klinik",
+    "rating": 4.6,
+    "price": 80000,
+    "image": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db",
+    "provider": {"name": "Ceria Dental","since": 2014,"license": "Kemenkes"},
+    "contact": {"phone": "081234567807","email": "info7@sehat.id","city": "Pekanbaru"},
+    "schedule": {"open": "08:00","close": "17:00","days": "Senin-Sabtu"}
+  },
+  {
+    "id": 8,
+    "name": "Apotek Keluarga",
+    "category": "Apotek",
+    "rating": 4.4,
+    "price": 15000,
+    "image": "https://images.unsplash.com/photo-1584515933487-779824d29309",
+    "provider": {"name": "Farma Keluarga","since": 2010,"license": "BPOM"},
+    "contact": {"phone": "081234567808","email": "info8@sehat.id","city": "Bangkinang"},
+    "schedule": {"open": "08:00","close": "22:00","days": "Senin-Minggu"}
+  },
+  {
+    "id": 9,
+    "name": "Lab Kimia Farma",
+    "category": "Laboratorium",
+    "rating": 4.7,
+    "price": 100000,
+    "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67",
+    "provider": {"name": "Kimia Farma","since": 2000,"license": "Kemenkes"},
+    "contact": {"phone": "081234567809","email": "info9@sehat.id","city": "Pekanbaru"},
+    "schedule": {"open": "07:00","close": "19:00","days": "Senin-Jumat"}
+  },
+  {
+    "id": 10,
+    "name": "Telemedicine Psikolog",
+    "category": "Telemedicine",
+    "rating": 4.9,
+    "price": 90000,
+    "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528",
+    "provider": {"name": "Riliv","since": 2016,"license": "Kemenkes"},
+    "contact": {"phone": "081234567810","email": "info10@sehat.id","city": "Dumai"},
+    "schedule": {"open": "09:00","close": "21:00","days": "Senin-Minggu"}
+  },
+  {
+    "id": 11,
+    "name": "Klinik Ibu Anak",
+    "category": "Klinik",
+    "rating": 4.8,
+    "price": 70000,
+    "image": "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283",
+    "provider": {"name": "Bunda Care","since": 2013,"license": "Kemenkes"},
+    "contact": {"phone": "081234567811","email": "info11@sehat.id","city": "Pekanbaru"},
+    "schedule": {"open": "08:00","close": "18:00","days": "Senin-Sabtu"}
+  },
+  {
+    "id": 12,
+    "name": "Apotek FarmaPlus",
+    "category": "Apotek",
+    "rating": 4.5,
+    "price": 25000,
+    "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+    "provider": {"name": "FarmaPlus","since": 2011,"license": "BPOM"},
+    "contact": {"phone": "081234567812","email": "info12@sehat.id","city": "Bangkinang"},
+    "schedule": {"open": "08:00","close": "23:00","days": "Senin-Minggu"}
+  },
+  {
+    "id": 13,
+    "name": "Laboratorium Medilab",
+    "category": "Laboratorium",
+    "rating": 4.6,
+    "price": 110000,
+    "image": "https://images.unsplash.com/photo-1579154204601-01588f351e67",
+    "provider": {"name": "Medilab","since": 2008,"license": "Kemenkes"},
+    "contact": {"phone": "081234567813","email": "info13@sehat.id","city": "Dumai"},
+    "schedule": {"open": "07:00","close": "17:00","days": "Senin-Jumat"}
+  },
+  {
+    "id": 14,
+    "name": "Telemedicine Spesialis",
+    "category": "Telemedicine",
+    "rating": 4.7,
+    "price": 100000,
+    "image": "https://images.unsplash.com/photo-1584515933487-779824d29309",
+    "provider": {"name": "Alodokter","since": 2015,"license": "Kemenkes"},
+    "contact": {"phone": "081234567814","email": "info14@sehat.id","city": "Pekanbaru"},
+    "schedule": {"open": "09:00","close": "22:00","days": "Senin-Minggu"}
+  },
+  {
+    "id": 15,
+    "name": "Klinik Sehat Bersama",
+    "category": "Klinik",
+    "rating": 4.5,
+    "price": 50000,
+    "image": "https://images.unsplash.com/photo-1519494080410-f9aa76cb4283",
+    "provider": {"name": "Sehat Bersama","since": 2012,"license": "Kemenkes"},
+    "contact": {"phone": "081234567815","email": "info15@sehat.id","city": "Bangkinang"},
+    "schedule": {"open": "08:00","close": "19:00","days": "Senin-Sabtu"}
+  },
+  {
+    "id": 16,
+    "name": "Apotek Medika",
+    "category": "Apotek",
+    "rating": 4.4,
+    "price": 20000,
+    "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+    "provider": {"name": "Medika Farma","since": 2010,"license": "BPOM"},
+    "contact": {"phone": "081234567816","email": "info16@sehat.id","city": "Dumai"},
+    "schedule": {"open": "08:00","close": "22:00","days": "Senin-Minggu"}
+  },
+  {
+    "id": 17,
+    "name": "Laboratorium BioTest",
+    "category": "Laboratorium",
+    "rating": 4.6,
+    "price": 130000,
+    "image": "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b",
+    "provider": {"name": "BioTest","since": 2009,"license": "Kemenkes"},
+    "contact": {"phone": "081234567817","email": "info17@sehat.id","city": "Pekanbaru"},
+    "schedule": {"open": "07:00","close": "18:00","days": "Senin-Jumat"}
+  },
+  {
+    "id": 18,
+    "name": "Telemedicine Nutrisi",
+    "category": "Telemedicine",
+    "rating": 4.7,
+    "price": 65000,
+    "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528",
+    "provider": {"name": "DietCare","since": 2019,"license": "Kemenkes"},
+    "contact": {"phone": "081234567818","email": "info18@sehat.id","city": "Bangkinang"},
+    "schedule": {"open": "09:00","close": "21:00","days": "Senin-Minggu"}
+  },
+  {
+    "id": 19,
+    "name": "Klinik Umum Prima",
+    "category": "Klinik",
+    "rating": 4.5,
+    "price": 40000,
+    "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+    "provider": { "name": "Prima Care", "since": 2011, "license": "Kemenkes" },
+    "contact": {
+      "phone": "081234567819",
+      "email": "info19@sehat.id",
+      "city": "Dumai"
+    },
+    "schedule": { "open": "08:00", "close": "20:00", "days": "Senin-Sabtu" }
+  },
+  {
+    "id": 20,
+    "name": "Apotek Sehat Sentosa",
+    "category": "Apotek",
+    "rating": 4.6,
+    "price": 22000,
+    "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5",
+    "provider": {"name": "Sentosa Farma","since": 2013,"license": "BPOM"},
+    "contact": {"phone": "081234567820","email": "info20@sehat.id","city": "Pekanbaru"},
+    "schedule": {"open": "08:00","close": "23:00","days": "Senin-Minggu"}
+  }
+]
