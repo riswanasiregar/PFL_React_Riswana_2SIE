@@ -17,8 +17,7 @@ export default function ServiceCard({ service }) {
 
         {/* overlay gradient */}
         <div
-          className="absolute inset-0 bg-gradient-to-t 
-                        from-black/40 via-black/10 to-transparent"
+          className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"
         />
 
         {/* category badge */}
