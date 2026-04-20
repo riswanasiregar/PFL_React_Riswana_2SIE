@@ -2,12 +2,12 @@ import { MdDashboard, MdAssignment, MdPeople, MdAdd } from "react-icons/md";
 
 export default function Sidebar() {
   return (
-    /* 2️⃣ Layout utama Sidebar */
+    /*  Layout utama Sidebar */
     <div
       id="sidebar"
       className="flex min-h-screen w-90 flex-col bg-white p-10 shadow-lg"
     >
-      {/* 3️⃣ Bagian Logo */}
+      {/* 3Bagian Logo */}
       <div id="sidebar-logo" className="flex flex-col">
         <span
           id="logo-title"
@@ -23,7 +23,7 @@ export default function Sidebar() {
         </span>
       </div>
 
-      {/* 4️⃣ & 6️⃣ Bagian List Menu */}
+      {/*  Bagian List Menu */}
       <div id="sidebar-menu" className="mt-10">
         <ul id="menu-list" className="space-y-3">
           {/* Menu Dashboard */}
