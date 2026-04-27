@@ -5,9 +5,9 @@ import {
   FaDollarSign,
   FaUsers,
 } from "react-icons/fa";
-import PageHeader from "../components/PageHeader";
-import ordersData from "../data/orders.json";
-import customersData from "../data/customers.json";
+import PageHeader from "../../components/PageHeader";
+import ordersData from "../../data/orders.json";
+import customersData from "../../data/customers.json";
 
 /* Format harga ke Rupiah */
 function formatRupiah(amount) {
