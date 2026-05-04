@@ -240,5 +240,13 @@
     "brand": "LG",
     "price": 5000000,
     "stock": 6
+  },
+  {
+    "title": "Smart TV 43 inch",
+    "code": "P030",
+    "category": "Elektronik",
+    "brand": "LG",
+    "price": 5000000,
+    "stock": 6
   }
 ]
