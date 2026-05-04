@@ -6,7 +6,7 @@ import "./assets/tailwind.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/pertemuan6-latihan.html">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>,

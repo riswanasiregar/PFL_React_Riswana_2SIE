@@ -1,6 +1,9 @@
 import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
+//produk detail
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"));
+
 const Loading = () => <div className="p-5 text-center">Loading...</div>;
 
 const MainLayout = lazy(() => import("./pertemuan6-latihan/layouts/MainLayout"));
@@ -29,6 +32,9 @@ export default function App() {
           <Route path="/error-400" element={<Error400 />} />
           <Route path="/error-401" element={<Error401 />} />
           <Route path="/error-403" element={<Error403 />} />
+          
+          <Route path="/products/:id" element={<ProductDetail />} />
+          
         </Route>
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<Login />} />

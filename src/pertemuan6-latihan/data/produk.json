@@ -1,0 +1,244 @@
+[
+  {
+    "title": "Laptop Asus ROG",
+    "code": "P001",
+    "category": "Elektronik",
+    "brand": "Asus",
+    "price": 15000000,
+    "stock": 5
+  },
+  {
+    "title": "HP Samsung S23",
+    "code": "P002",
+    "category": "Elektronik",
+    "brand": "Samsung",
+    "price": 12000000,
+    "stock": 10
+  },
+  {
+    "title": "Mouse Logitech",
+    "code": "P003",
+    "category": "Aksesoris",
+    "brand": "Logitech",
+    "price": 200000,
+    "stock": 25
+  },
+  {
+    "title": "Keyboard Mechanical",
+    "code": "P004",
+    "category": "Aksesoris",
+    "brand": "Rexus",
+    "price": 500000,
+    "stock": 15
+  },
+  {
+    "title": "Monitor LG 24 inch",
+    "code": "P005",
+    "category": "Elektronik",
+    "brand": "LG",
+    "price": 2500000,
+    "stock": 8
+  },
+  {
+    "title": "Printer Canon",
+    "code": "P006",
+    "category": "Elektronik",
+    "brand": "Canon",
+    "price": 1800000,
+    "stock": 7
+  },
+  {
+    "title": "Flashdisk 64GB",
+    "code": "P007",
+    "category": "Aksesoris",
+    "brand": "Sandisk",
+    "price": 100000,
+    "stock": 30
+  },
+  {
+    "title": "Harddisk External 1TB",
+    "code": "P008",
+    "category": "Aksesoris",
+    "brand": "Seagate",
+    "price": 800000,
+    "stock": 12
+  },
+  {
+    "title": "Speaker Bluetooth",
+    "code": "P009",
+    "category": "Elektronik",
+    "brand": "JBL",
+    "price": 600000,
+    "stock": 9
+  },
+  {
+    "title": "Headset Gaming",
+    "code": "P010",
+    "category": "Aksesoris",
+    "brand": "Fantech",
+    "price": 350000,
+    "stock": 20
+  },
+
+  {
+    "title": "Laptop Acer Aspire",
+    "code": "P011",
+    "category": "Elektronik",
+    "brand": "Acer",
+    "price": 9000000,
+    "stock": 6
+  },
+  {
+    "title": "HP Xiaomi Redmi",
+    "code": "P012",
+    "category": "Elektronik",
+    "brand": "Xiaomi",
+    "price": 3000000,
+    "stock": 18
+  },
+  {
+    "title": "Charger Fast Charging",
+    "code": "P013",
+    "category": "Aksesoris",
+    "brand": "Anker",
+    "price": 250000,
+    "stock": 22
+  },
+  {
+    "title": "Powerbank 10000mAh",
+    "code": "P014",
+    "category": "Aksesoris",
+    "brand": "Vivan",
+    "price": 150000,
+    "stock": 35
+  },
+  {
+    "title": "Smartwatch",
+    "code": "P015",
+    "category": "Elektronik",
+    "brand": "Huawei",
+    "price": 1200000,
+    "stock": 11
+  },
+  {
+    "title": "Kamera DSLR",
+    "code": "P016",
+    "category": "Elektronik",
+    "brand": "Nikon",
+    "price": 7000000,
+    "stock": 4
+  },
+  {
+    "title": "Tripod Kamera",
+    "code": "P017",
+    "category": "Aksesoris",
+    "brand": "Weifeng",
+    "price": 200000,
+    "stock": 14
+  },
+  {
+    "title": "Microphone",
+    "code": "P018",
+    "category": "Aksesoris",
+    "brand": "Boya",
+    "price": 300000,
+    "stock": 13
+  },
+  {
+    "title": "Router WiFi",
+    "code": "P019",
+    "category": "Elektronik",
+    "brand": "TP-Link",
+    "price": 400000,
+    "stock": 16
+  },
+  {
+    "title": "Modem USB",
+    "code": "P020",
+    "category": "Elektronik",
+    "brand": "Huawei",
+    "price": 350000,
+    "stock": 10
+  },
+
+  {
+    "title": "SSD 512GB",
+    "code": "P021",
+    "category": "Aksesoris",
+    "brand": "Samsung",
+    "price": 900000,
+    "stock": 17
+  },
+  {
+    "title": "RAM 16GB",
+    "code": "P022",
+    "category": "Aksesoris",
+    "brand": "Corsair",
+    "price": 750000,
+    "stock": 19
+  },
+  {
+    "title": "Cooling Pad Laptop",
+    "code": "P023",
+    "category": "Aksesoris",
+    "brand": "Cooler Master",
+    "price": 250000,
+    "stock": 21
+  },
+  {
+    "title": "Webcam HD",
+    "code": "P024",
+    "category": "Elektronik",
+    "brand": "Logitech",
+    "price": 500000,
+    "stock": 9
+  },
+  {
+    "title": "Tablet Android",
+    "code": "P025",
+    "category": "Elektronik",
+    "brand": "Samsung",
+    "price": 4000000,
+    "stock": 7
+  },
+  {
+    "title": "Stylus Pen",
+    "code": "P026",
+    "category": "Aksesoris",
+    "brand": "Xiaomi",
+    "price": 150000,
+    "stock": 23
+  },
+  {
+    "title": "Drone Kamera",
+    "code": "P027",
+    "category": "Elektronik",
+    "brand": "DJI",
+    "price": 10000000,
+    "stock": 3
+  },
+  {
+    "title": "VR Headset",
+    "code": "P028",
+    "category": "Elektronik",
+    "brand": "Oculus",
+    "price": 6000000,
+    "stock": 5
+  },
+  {
+    "title": "Game Controller",
+    "code": "P029",
+    "category": "Aksesoris",
+    "brand": "Sony",
+    "price": 800000,
+    "stock": 12
+  },
+  {
+    "title": "Smart TV 43 inch",
+    "code": "P030",
+    "category": "Elektronik",
+    "brand": "LG",
+    "price": 5000000,
+    "stock": 6
+  }
+]

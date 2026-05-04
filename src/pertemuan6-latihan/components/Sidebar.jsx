@@ -6,6 +6,7 @@ import {
   MdErrorOutline,
   MdLockOutline,
   MdBlock,
+  MdInventory2,
 } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
@@ -60,6 +61,14 @@ export default function Sidebar() {
             <NavLink to="/customers" className={menuClass}>
               <MdPeople className="mr-4 text-xl" />
               <span>Customers</span>
+            </NavLink>
+          </li>
+
+          {/* Produk */}
+          <li>
+            <NavLink to="/produk" className={menuClass}>
+              <MdInventory2 className="mr-4 text-xl" />
+              <span>Produk</span>
             </NavLink>
           </li>
         </ul>
