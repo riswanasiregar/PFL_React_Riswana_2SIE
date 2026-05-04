@@ -29,5 +29,6 @@
   { "id": "CUST-028", "name": "Bagas Kurniawan", "email": "bagas@email.com",   "phone": "081234567817", "loyalty": "Bronze" },
   { "id": "CUST-029", "name": "Citra Anggraini", "email": "citra@email.com",   "phone": "081234567818", "loyalty": "Gold"   },
   { "id": "CUST-030", "name": "Dian Permata",    "email": "dian@email.com",    "phone": "081234567819", "loyalty": "Silver" },
-  { "id": "CUST-031", "name": "Dian Permata",    "email": "dian@email.com",    "phone": "081234567819", "loyalty": "Silver" }
+  { "id": "CUST-031", "name": "Dian Permata",    "email": "dian@email.com",    "phone": "081234567819", "loyalty": "Silver" },
+  { "id": "CUST-032", "name": "Dian Permata",    "email": "dian@email.com",    "phone": "081234567819", "loyalty": "Silver" }
 ]
