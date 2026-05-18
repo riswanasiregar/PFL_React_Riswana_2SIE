@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { Component, lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
 //produk detail
@@ -16,7 +16,7 @@ const Error400  = lazy(() => import("./pertemuan6-latihan/pages/main/Error400"))
 const Error401  = lazy(() => import("./pertemuan6-latihan/pages/main/Error401"));
 const Error403  = lazy(() => import("./pertemuan6-latihan/pages/main/Error403"));
 const NotFound  = lazy(() => import("./pertemuan6-latihan/pages/main/NotFound"));
-
+const Components = lazy(() => import("./pertemuan6-latihan/pages/main/Components"));
 const Forgot   = lazy(() => import("./pertemuan6-latihan/pages/auth/Forgot"));
 const Login    = lazy(() => import("./pertemuan6-latihan/pages/auth/Login"));
 const Register = lazy(() => import("./pertemuan6-latihan/pages/auth/Register"));
@@ -29,6 +29,7 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
+          <Route path="/components" element={<Components />} />
           <Route path="/error-400" element={<Error400 />} />
           <Route path="/error-401" element={<Error401 />} />
           <Route path="/error-403" element={<Error403 />} />

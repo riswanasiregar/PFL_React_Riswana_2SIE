@@ -64,6 +64,14 @@ export default function Sidebar() {
             </NavLink>
           </li>
 
+            {/* Components */}
+          <li>
+            <NavLink to="/components" className={menuClass}>
+              <MdPeople className="mr-4 text-xl" />
+              <span>Components</span>
+            </NavLink>
+          </li>
+
           {/* Produk */}
           <li>
             <NavLink to="/produk" className={menuClass}>
