@@ -11,6 +11,7 @@ import Error403 from "./pages/main/Error403";
 import NotFound from "./pages/main/NotFound";
 import Components from "./pages/main/Components";
 import FiturXyz from "./pages/main/Fiturxyz";
+import Note from "./pages/main/Note";
 
 const ProductDetail = lazy(() => import("./pages/main/ProdukDetail"));
 
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/error-401" element={<Error401 />} />
           <Route path="/error-403" element={<Error403 />} />
            <Route path="/fiturxyz" element={<FiturXyz/>} />
+           <Route path="/note" element={<Note />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
