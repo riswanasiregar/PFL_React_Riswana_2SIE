@@ -1,11 +1,12 @@
-import React, { useState } from "react"; // Tambahkan React
-import { useNavigate } from "react-router-dom"; // WAJIB: Tambahkan ini
-import axios from "axios"; // WAJIB: Tambahkan ini
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 import { BsFillExclamationDiamondFill } from "react-icons/bs";
 import { ImSpinner2 } from "react-icons/im";
 
 export default function Login() {
   const navigate = useNavigate();
+  const { login } = useAuth();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [dataForm, setDataForm] = useState({
@@ -25,28 +26,25 @@ export default function Login() {
     e.preventDefault();
 
     setLoading(true);
-    setError(""); // Gunakan string kosong untuk mereset error
+    setError("");
 
-    axios
-      .post("https://dummyjson.com/user/login", {
-        username: dataForm.email, // Catatan: API dummyjson memang butuh field 'username'
+    try {
+      const profile = await login({
+        email: dataForm.email,
         password: dataForm.password,
-      })
-      .then((response) => {
-        // Jika sukses (status 200)
-        navigate("/");
-      })
-      .catch((err) => {
-        // Menangani error dari Axios
-        if (err.response) {
-          setError(err.response.data.message || "An error occurred");
-        } else {
-          setError(err.message || "An unknown error occurred");
-        }
-      })
-      .finally(() => {
-        setLoading(false);
       });
+
+      /* Redirect otomatis berdasarkan role di database */
+      if (profile?.role === "admin") {
+        navigate("/");
+      } else {
+        navigate("/member");
+      }
+    } catch (err) {
+      setError(err.message || "Login gagal");
+    } finally {
+      setLoading(false);
+    }
   };
 
   /* error & loading status */
@@ -65,7 +63,7 @@ export default function Login() {
   ) : null;
 
   return (
-    <div className="max-w-md mx-auto mt-10"> {/* Tambahan sedikit styling agar ke tengah */}
+    <div className="max-w-md mx-auto mt-10">
       <h2 className="text-2xl font-semibold text-gray-700 mb-6 text-center">
         Welcome Back 👋
       </h2>
@@ -81,10 +79,11 @@ export default function Login() {
           <input
             type="text"
             className="w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400"
-            placeholder="emilys"
+            placeholder="email@example.com"
             name="email"
+            value={dataForm.email}
             onChange={handleChange}
-            required // Tambahkan required agar user tidak kirim input kosong
+            required
           />
         </div>
         <div className="mb-6">
@@ -96,18 +95,26 @@ export default function Login() {
             className="w-full px-4 py-2 bg-gray-50 border border-gray-300 rounded-lg shadow-sm placeholder-gray-400"
             placeholder="********"
             name="password"
+            value={dataForm.password}
             onChange={handleChange}
             required
           />
         </div>
         <button
           type="submit"
-          disabled={loading} // Tombol mati saat loading agar tidak double klik
+          disabled={loading}
           className={`w-full ${loading ? 'bg-gray-400' : 'bg-green-500 hover:bg-green-600'} text-white font-semibold py-2 px-4 rounded-lg transition duration-300`}
         >
           {loading ? "Memproses..." : "Login"}
         </button>
       </form>
+
+      <p className="text-center text-sm text-gray-600 mt-4">
+        Belum punya akun?{" "}
+        <Link to="/register" className="text-green-600 hover:underline font-medium">
+          Daftar di sini
+        </Link>
+      </p>
     </div>
   );
 }
